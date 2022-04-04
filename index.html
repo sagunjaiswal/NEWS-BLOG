@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu+Mono:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="icon" href="images/NewsIcon.png" >
+    <title>News Blog</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="title">
+            <h2>NEWS BLOG</h2>
+            <h6>WORLDWIDE NEWS</h6>
+        </div>
+    </div>
+    <div class="midSection">
+        <span class="select">
+            <p>SELECT CATEGORY</p>
+            <select id="selectBox" onchange="changeFunc();">
+                <option value="All">All</option>
+                <option value="One">One</option>
+                <option value="Two">Two</option>
+            </select>
+        </span>
+    
+        <span class="midSectionHeading">
+            <h2>ALL NEWS</h2>
+        </span>
+        <span class="subscription">
+            <span>
+                <form id="form" action="#">
+                    <span class="inputBox">
+                        <input type="text" name = "" id="email" placeholder="Email Address" onchange="validation()"/>
+                                             
+                    </span>
+                    <span>
+                        <button class="subscribeButton" type="submit">SUBSCRIBE</button>
+                    </span>
+                    <span id="validationText"></span>   
+                </form>
+            </span>
+            
+        </span>
+    </div>
+    <br/>
+    <hr/>
+    <div class="mainBody">
+        <div class="box One">
+            <div class="heading">
+                <h2>Title One</h2>
+            </div>
+            <img src="images/news_image.jpg" alt=""/>
+            <div class="text">
+                <div class="smallText"><span>Posted on </span><span class="bolderSmallText">29 June 2019</span><span> // Category: </span><span  class="bolderSmallText">One</span></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium molestiae eligendi corrupti non illo! Nihil et enim dicta, voluptatem reprehenderit debitis delectus mollitia fugit soluta exercitationem unde magni alias cupiditate quasi vitae impedit labore vero iste culpa dolorum pariatur officiis?</p>
+                <br/>
+                <a href="#">Read more</a>
+            </div>
+        </div>
+        <div class="box Two">
+            <div class="heading">
+                <h2>Title Two</h2>
+            </div>
+            <img src="images/news_image.jpg" alt=""/>
+            <div class="text">
+                <div class="smallText"><span>Posted on </span><span class="bolderSmallText">22 June 2019</span><span> // Category: </span><span  class="bolderSmallText">Two</span></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium molestiae eligendi corrupti non illo! Nihil et enim dicta, voluptatem reprehenderit debitis delectus mollitia fugit soluta exercitationem unde magni alias cupiditate quasi vitae impedit labore vero iste culpa dolorum pariatur officiis?</p>
+                <br/>
+                <a href="#">Read more</a>
+            </div>
+        </div>
+        <div class="box One">
+            <div class="heading">
+                <h2>Title Three</h2>
+            </div>
+            <img src="images/news_image.jpg" alt=""/>
+            <div class="text">
+                <div class="smallText"><span>Posted on </span><span class="bolderSmallText">20 June 2019</span><span> // Category: </span><span  class="bolderSmallText">One</span></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium molestiae eligendi corrupti non illo! Nihil et enim dicta, voluptatem reprehenderit debitis delectus mollitia fugit soluta exercitationem unde magni alias cupiditate quasi vitae impedit labore vero iste culpa dolorum pariatur officiis?</p>
+                <br/>
+                <a href="#">Read more</a>
+            </div>
+        </div>
+        <div class="box Two">
+            <div class="heading">
+                <h2>Title Four</h2>
+            </div>
+            <img src="images/news_image.jpg" alt=""/>
+            <div class="text">
+                <div class="smallText"><span>Posted on </span><span class="bolderSmallText">22 June 2019</span><span> // Category: </span><span  class="bolderSmallText">Two</span></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium molestiae eligendi corrupti non illo! Nihil et enim dicta, voluptatem reprehenderit debitis delectus mollitia fugit soluta exercitationem unde magni alias cupiditate quasi vitae impedit labore vero iste culpa dolorum pariatur officiis?</p>
+                <br/>
+                <a href="#">Read more</a>
+            </div>
+        </div>
+        <div class="box Two">
+            <div class="heading">
+                <h2>Title Five</h2>
+            </div>
+            <img src="images/news_image.jpg" alt=""/>
+            <div class="text">
+                <div class="smallText"><span>Posted on </span><span class="bolderSmallText">22 June 2019</span><span> // Category: </span><span  class="bolderSmallText">Two</span></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium molestiae eligendi corrupti non illo! Nihil et enim dicta, voluptatem reprehenderit debitis delectus mollitia fugit soluta exercitationem unde magni alias cupiditate quasi vitae impedit labore vero iste culpa dolorum pariatur officiis?</p>
+                <br/>
+                <a href="#">Read more</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy;NewsFeed<script>document.write(new Date().getFullYear())</script></p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

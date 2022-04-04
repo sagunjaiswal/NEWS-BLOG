@@ -1,0 +1,229 @@
+/*UTILITIES*/
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: roboto;
+}
+/*few general stylings*/
+h2{
+    color: #002244;
+}
+p{
+    font-size: smaller;
+}
+/*mid section styling*/
+.midSection{
+    display: flex;
+    width: 100%;
+    padding-left: 70px;
+    padding-left: 70px;
+    
+}
+.midSection span{
+    min-width: 33%;
+}
+
+.midSection button{
+    background-color: black;
+    color: aliceblue;
+    padding : 2px;
+}
+.select{
+    padding-top: 10px;
+}
+
+/*NAVBAR*/
+.navbar{
+    align-items: center;
+    padding: 20px;
+    background-color: #002244;
+
+}
+.navbar .title {
+    align-items: center;
+    background-color: aliceblue;
+    /* padding-left: 40%; */
+    margin-left: 40% ;
+    margin-right: 40%;
+    border : 3px solid #e2725b;
+    text-align: center;
+}
+
+select{
+    width: 50%;
+    border : 2px solid #002244;
+    padding: 2px;
+}
+.midSectionHeading{
+    text-align:center;
+                position: relative;
+                min-width: 50%;
+}
+.midSectionHeading h2{
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    padding-left: 70px;;
+} 
+.subscription{
+    padding-top: 30px;
+    padding-left: 30px;
+}
+/*CARDS*/
+.mainBody{
+    width: 100%;
+}
+.box{
+    max-width: 95%;
+    padding: 10px;
+    margin : 10px auto;
+    -webkit-box-shadow: 2px 4px 39px -6px rgba(0,0,0,0.57);
+    -moz-box-shadow: 2px 4px 39px -6px rgba(0,0,0,0.57);
+    box-shadow: 2px 4px 39px -6px rgba(0,0,0,0.57);
+}
+.box img {
+    min-width: 50%;
+    max-width: calc(0.9vw + 0.6em);
+    height: 325px;
+    display: block;
+    object-fit: fill;
+    padding: 5px;
+    
+}
+.box .heading, .box .text{
+    width : 100%;
+    padding : 0 5px;
+    min-width: 300px;
+    
+}
+.text{
+    margin-left: -250px;
+}
+h2, h4{
+    text-transform : uppercase;
+}
+.text p{
+    display: inline-block;
+    margin : 10px 0;
+    font-size: calc(0.6vw + 0.6em);
+    direction: ltr;
+    width: 30vw;
+    margin:auto;
+    text-align:justify;
+    word-break: break-word;
+    white-space: pre-line;
+    overflow-wrap: break-word;
+    -ms-word-break: break-word;
+    word-break: break-word;
+      -ms-hyphens: auto;
+      -moz-hyphens: auto;
+      -webkit-hyphens: auto;
+      hyphens: auto;padding: 1em;
+    
+
+}
+a{
+    display: inline-block;
+    background: #e2725b;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+.hide{
+    display: none;
+}
+.smallText{
+    font-size:0.5rem;
+    
+    color: grey;
+}
+.smallText .bolderSmallText{
+    font-weight: bolder;
+}
+
+@media (min-width : 700px){
+    .mainBody{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .box{
+        min-width: 95%;
+    }
+    .box img{
+        float: left;
+        
+        /* max-width: calc(0.9vw + 0.6em); */
+    }
+    .box .heading, .box .text{
+        float: right;
+        width: 50%;
+    }
+}
+
+@media (max-width : 700px){
+    .box img{       
+        object-fit: contain;
+        min-width: 90%;
+        /* max-height: 0.6vh; */
+        min-height: 0.4vh;
+    }
+    .box{
+        max-width: 50%;
+    }
+    .box .text{
+        margin-left: 0.1em;
+    }
+}
+@media (max-width : 500px){
+    .box img{       
+        object-fit: contain;
+        max-width: 90%;
+        min-width: 80%;
+        min-height: 0.4vh;
+        /* padding-top: -4000px; */
+        margin-top: -50px;
+        margin-bottom: -50px;
+    }
+    .box{
+        max-width: 90%;
+        min-width: 80%;
+    }
+    .box .text{
+        margin-left: 0.1em;
+    }
+    .text p{
+        display: inline-block;
+        margin : 10px 0;
+
+        min-width: 80vw;
+    }
+    .midSectionHeading h2{
+        margin-left: -5rem;
+    }
+    .subscription{
+        display:none;
+    }
+    .select{
+        font-size: xx-small;
+        margin-left:-1.7rem ;
+    }
+    .title h2{
+        font-size: x-small;
+    }
+}
+/*FOOTER*/
+.footer{
+    background-color: #002244;
+    margin-bottom: -20px;
+    color: aliceblue;
+    padding: 1px;
+    font-weight: lighter;
+}
+.footer p{
+    margin-left: 45%;
+}
